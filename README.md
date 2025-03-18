@@ -11,9 +11,9 @@ This project analyzes the **United Nations Sustainable Development Goals (SDG) I
 
 ## Repository Structure
 📂 UN_SDG_Analysis_Project/
-│── 📂 queries.sql             # SQL queries for data extraction
-│── 📂 scripts/                # Python scripts for data visualization
-│── README.md                  # Project overview & instructions
+1. queries.sql - SQL queries for data extraction
+2. scripts/ - Python scripts for data visualization
+3. README.md - Project overview & instructions
 
 ## 📊 SQL Queries Used
 1. Tracking overall SDG progress
@@ -22,12 +22,11 @@ This project analyzes the **United Nations Sustainable Development Goals (SDG) I
 4. Focusing on specific indicators like poverty reduction or education
 5. Evaluating country-specific progress towards SDGs
 
-
 ## 📈 Data Visualization Samples
-✅ **Bar Chart:** Tracks SDG progress across all 17 goals.  
-✅ **Line Chart:** Yearly SDG progress comparison across different regions.  
-✅ **Histogram:** Distribution of progress in poverty reduction & education access.  
-✅ **Scatter Plot:** Country-wise SDG progress evaluation.
+1. **Bar Chart:** Tracks SDG progress across all 17 goals.  
+2. **Line Chart:** Yearly SDG progress comparison across different regions.  
+3. **Histogram:** Distribution of progress in poverty reduction & education access.  
+4. **Scatter Plot:** Country-wise SDG progress evaluation.
 
 ## 🏆 Key Insights from Analysis
 - **Education & clean energy show the fastest progress (SDG 4, 7, 8).**
@@ -36,19 +35,16 @@ This project analyzes the **United Nations Sustainable Development Goals (SDG) I
 - **Developing nations show mixed results, requiring stronger policy interventions.**
 
 ## 🚀 Recommendations for SDG Acceleration
-🔹 **Expand social protection programs** to reduce poverty (SDG 1).  
-🔹 **Invest in digital learning & rural education initiatives** (SDG 4).  
-🔹 **Encourage renewable energy investments** (SDG 7).  
-🔹 **Promote inclusive economic growth & innovation** (SDG 8 & 9).  
+1. **Expand social protection programs** to reduce poverty (SDG 1).  
+2. **Invest in digital learning & rural education initiatives** (SDG 4).  
+3. **Encourage renewable energy investments** (SDG 7).  
+4. **Promote inclusive economic growth & innovation** (SDG 8 & 9).  
 
-## 📌 How to Use This Repository
-1️⃣ **Clone the repository:**  
-   ```bash
-   git clone https://github.com/SeanaMutinda/UN_SDG_Analysis_Project.git
-   ```
-2️⃣ **Run SQL queries on BigQuery** to extract data.  
-3️⃣ **Use Python scripts** to generate visualizations.  
-4️⃣ **Analyze results & contribute insights** to drive SDG improvements.  
+## How to Use This Repository
+1.  **Clone the repository:**  
+2.  **Run SQL queries on BigQuery** to extract data.  
+3.  *Use Python scripts** to generate visualizations.  
+4.  **Analyze results & contribute insights** to drive SDG improvements.  
 
 ## 🤝 Contributing
 All contributions are welcome! Feel free to submit **issues, suggestions, or pull requests** to enhance the analysis.
