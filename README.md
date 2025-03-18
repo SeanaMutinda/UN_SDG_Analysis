@@ -1,6 +1,7 @@
 📊 UN Sustainable Development Goals (SDG) Data Analysis
 
 📌 Project Overview
+
 This project analyzes the **United Nations Sustainable Development Goals (SDG) Indicator dataset** available on **Google Cloud Platform (GCP)** to evaluate global, regional, and country-specific progress. Using **SQL queries** for data extraction and **Python (Matplotlib & Seaborn)** for visualization, insights on trends, challenges, and opportunities for achieving the SDGs are derived.
 
 ## 🔎 Key Features
