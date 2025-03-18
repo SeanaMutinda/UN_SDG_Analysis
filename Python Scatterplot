@@ -1,0 +1,47 @@
+# Import necessary libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+# Number of SDGs and Countries
+num_sdgs = 17
+num_countries = 20
+
+# List of 17 SDGs
+sdg_goals = [
+    "SDG 1 (No Poverty)", "SDG 2 (Zero Hunger)", "SDG 3 (Good Health)", "SDG 4 (Education)",
+    "SDG 5 (Gender Equality)", "SDG 6 (Clean Water)", "SDG 7 (Clean Energy)", "SDG 8 (Economic Growth)",
+    "SDG 9 (Industry & Innovation)", "SDG 10 (Reduced Inequalities)", "SDG 11 (Sustainable Cities)",
+    "SDG 12 (Responsible Consumption)", "SDG 13 (Climate Action)", "SDG 14 (Life Below Water)",
+    "SDG 15 (Life on Land)", "SDG 16 (Peace & Justice)", "SDG 17 (Global Partnerships)"
+]
+
+# List of 20 countries (5 from each region)
+countries = [
+    "USA", "Canada", "Mexico", "Brazil", "Argentina",  # North & South America
+    "UK", "Germany", "France", "Italy", "Spain",  # Europe
+    "India", "China", "Japan", "South Korea", "Indonesia",  # Asia
+    "Kenya", "South Africa", "Egypt", "Nigeria", "Ghana"  # Africa
+]
+
+# Generate random progress values for each country-SDG pair
+progress_values = np.random.randint(30, 96, size=num_sdgs * num_countries)
+
+# Create DataFrame
+df_full_sdg = pd.DataFrame({
+    "sdg_goal": sdg_goals * num_countries,  # Repeat SDG list for each country
+    "country": np.repeat(countries, num_sdgs),  # Repeat each country for all SDGs
+    "progress": progress_values
+})
+
+# Plot Scatterplot with All 17 SDGs on the X-axis
+plt.figure(figsize=(14, 7))
+sns.scatterplot(x="sdg_goal", y="progress", hue="country", style="country", data=df_full_sdg, s=120, palette="tab20")
+
+# Labels and Title
+plt.xlabel("SDG Goal")
+plt.ylabel("Progress (%)")
+plt.title("Global Progress Toward All 17 SDGs Across Different Countries")
+plt.xticks(rotation=45, ha='right')  # Rotate SDG labels for better readability
+plt.ylim(0,
