@@ -1,0 +1,25 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Sample Data (Replace with actual query results)
+data = {
+    "country": ["USA", "India", "Brazil", "Germany", "Nigeria", "China", "Kenya", "Mexico", "France", "South Africa"],
+    "indicator": ["Poverty Reduction"] * 5 + ["Education Access"] * 5,
+    "value": [85, 60, 70, 95, 40, 75, 55, 80, 90, 50]  # Mock values
+}
+
+# Convert to DataFrame
+df = pd.DataFrame(data)
+
+# Plot Histograms
+plt.figure(figsize=(12, 6))
+sns.histplot(data=df, x="value", hue="indicator", bins=5, kde=True, palette="coolwarm")
+
+# Labels and Title
+plt.xlabel("Indicator Value (%)")
+plt.ylabel("Number of Countries")
+plt.title("Distribution of Poverty Reduction & Education Access Across Countries")
+
+# Show Plot
+plt.show()
