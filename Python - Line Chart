@@ -1,0 +1,30 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Sample Data (Mock version, replace with actual query results)
+data = {
+    "year": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023] * 3,
+    "region": ["United States"] * 9 + ["Europe"] * 9 + ["Africa"] * 9,
+    "avg_progress": [45, 48, 50, 53, 55, 57, 60, 63, 65,  # US
+                     50, 52, 55, 58, 60, 62, 65, 67, 70,  # Europe
+                     30, 32, 35, 38, 40, 42, 45, 47, 50]  # Africa
+}
+
+# Convert to DataFrame
+df = pd.DataFrame(data)
+
+# Plot
+plt.figure(figsize=(12, 6))
+sns.lineplot(x="year", y="avg_progress", hue="region", data=df, marker="o")
+
+# Labels and Title
+plt.xlabel("Year")
+plt.ylabel("Average Progress (%)")
+plt.title("Yearly Trends in Achieving SDGs by Region")
+plt.xticks(rotation=45)
+plt.ylim(0, 100)
+plt.legend(title="Region")
+
+# Show Plot
+plt.show()
