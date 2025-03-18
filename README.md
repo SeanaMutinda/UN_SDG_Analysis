@@ -10,12 +10,6 @@ Key Features
 3. **Comparative Analysis** on SDG indicators (poverty reduction, education access, clean energy).  
 4. **Actionable Insights & Recommendations** based on trends and disparities in SDG progress.  
 
-Repository Structure
-📂 UN_SDG_Analysis_Project/
-1. queries.sql - SQL queries for data extraction
-2. scripts/ - Python scripts for data visualization
-3. README.md - Project overview & instructions
-
 SQL Queries Used
 1. Tracking overall SDG progress
 2. Comparing progress among different regions  
@@ -47,11 +41,11 @@ How to Use This Repository
 3.  *Use Python scripts** to generate visualizations.  
 4.  **Analyze results & contribute insights** to drive SDG improvements.  
 
-Contributing
+
 All contributions are welcome! Feel free to submit **issues, suggestions, or pull requests** to enhance the analysis.
 
-License
-This project is open-source and available under the **MIT License**.
+
+Kindly note that this project is open-source and available under the **MIT License**.
 
 
 
