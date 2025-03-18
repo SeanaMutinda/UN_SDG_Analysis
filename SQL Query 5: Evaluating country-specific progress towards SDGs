@@ -1,0 +1,6 @@
+SELECT geoareaname AS country, goal, indicator, seriesdescription, timeperiod, 
+       AVG(SAFE_CAST(value AS FLOAT64)) AS avg_value
+FROM `bigquery-public-data.un_sdg.indicators`
+WHERE SAFE_CAST(value AS FLOAT64) IS NOT NULL
+GROUP BY country, goal, indicator, seriesdescription, timeperiod
+ORDER BY country, goal, timeperiod;
