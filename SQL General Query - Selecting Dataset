@@ -1,0 +1,3 @@
+SELECT *
+FROM `bigquery-public-data.un_sdg.indicators`
+LIMIT 1000;
