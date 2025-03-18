@@ -1,0 +1,5 @@
+SELECT indicator, seriesdescription, AVG(CAST(value AS FLOAT64)) AS avg_value
+FROM `bigquery-public-data.un_sdg.indicators`
+WHERE indicator IN ('1.a.2', '10.1.1')
+GROUP BY indicator, seriesdescription
+ORDER BY indicator;
