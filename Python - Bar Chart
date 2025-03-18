@@ -1,0 +1,26 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Sample Data (Replace with actual query results)
+sdg_data = {
+    "sdg_goal": list(range(1, 18)),  # SDG Goals 1-17
+    "avg_progress": [45, 60, 50, 70, 55, 65, 75, 80, 50, 67, 72, 40, 58, 77, 62, 68, 79]
+}
+
+# Convert to DataFrame
+df = pd.DataFrame(sdg_data)
+
+# Plot
+plt.figure(figsize=(12, 6))
+sns.barplot(x="sdg_goal", y="avg_progress", data=df, palette="coolwarm")
+
+# Labels and Title
+plt.xlabel("SDG Goal")
+plt.ylabel("Average Progress (%)")
+plt.title("Progress Towards Sustainable Development Goals")
+plt.xticks(rotation=45)
+plt.ylim(0, 100)
+
+# Show Plot
+plt.show()
