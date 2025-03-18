@@ -1,0 +1,7 @@
+SELECT 
+    goal, 
+    indicator, 
+    AVG(SAFE_CAST(value AS FLOAT64)) AS avg_value
+FROM `bigquery-public-data.un_sdg.indicators`
+GROUP BY goal, indicator
+ORDER BY goal;
